@@ -47,3 +47,11 @@ WHERE カラム IS NULL;
 
 SELSECT * FROM テーブル名
 WHERE カラム LIKE "%探したい文字%";
+
+
+## IN / NOT IN演算子
+
+
+SELECT *
+FROM expenses
+WEHRE category IN ("食費", "交際費");
