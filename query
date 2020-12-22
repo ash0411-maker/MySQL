@@ -63,3 +63,14 @@ WEHRE category IN ("食費", "交際費");
 SELECT *
 FROM expenses
 ORDER BY deposit desc, withdraw desc;
+
+
+
+## LIMIT - 先頭から数行だけ取得する
+
+検索結果の全行ではなく、先頭の１部だけを獲れる。
+
+SELECT カラム
+FROM テーブル
+LIMIT 取得行数 
+(OFFSET 先頭から除外する行数)
