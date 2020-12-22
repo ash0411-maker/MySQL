@@ -30,3 +30,12 @@ SELECT カラム FROM テーブル;
 
 
 UPDATE テーブル名 SET カラム名 = 値 where 更新したいレコードを検索;
+
+
+
+## NULL判定
+
+
+SELECT *
+FROM テーブル名
+WHERE カラム IS NULL;
