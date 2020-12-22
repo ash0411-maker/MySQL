@@ -39,3 +39,11 @@ UPDATE テーブル名 SET カラム名 = 値 where 更新したいレコード�
 SELECT *
 FROM テーブル名
 WHERE カラム IS NULL;
+
+
+
+##LIKE演算子
+
+
+SELSECT * FROM テーブル名
+WHERE カラム LIKE "%探したい文字%";
