@@ -55,3 +55,11 @@ WHERE カラム LIKE "%探したい文字%";
 SELECT *
 FROM expenses
 WEHRE category IN ("食費", "交際費");
+
+
+
+## ORDER BY
+
+SELECT *
+FROM expenses
+ORDER BY deposit desc, withdraw desc;
