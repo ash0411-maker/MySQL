@@ -1,0 +1,6 @@
+select count(*)
+FROM shohin;
+ count
+-------
+     8
+(1 row)
