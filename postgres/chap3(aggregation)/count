@@ -1,6 +1,10 @@
-select count(*)
+select count(*), count(カラム名)
 FROM shohin;
  count
 -------
      8
 (1 row)
+
+ all | shiire
+-----+--------
+   8 |      6
