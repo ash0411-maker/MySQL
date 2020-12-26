@@ -3,3 +3,7 @@ from テーブル名 group by 集約キー（グループ分けしたいカラ�
 
 select shohin_bunrui, count(*) 
 from shohin group by shohin_bunrui;
+
+
+
+select → from　→ where　→ gruop by
