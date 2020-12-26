@@ -1,0 +1,2 @@
+select avg(カラム名)
+FROM テーブル名;
