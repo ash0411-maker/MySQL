@@ -8,3 +8,8 @@ FROM shohin;
  all | shiire
 -----+--------
    8 |      6
+
+
+## 重複データのレコードをカウントしない
+select count(distinct カラム名)
+FROM テーブル名;
