@@ -1,0 +1,5 @@
+select カラム名, count(*) 
+from テーブル名 group by 集約キー（グループ分けしたいカラム）;
+
+select shohin_bunrui, count(*) 
+from shohin group by shohin_bunrui;
