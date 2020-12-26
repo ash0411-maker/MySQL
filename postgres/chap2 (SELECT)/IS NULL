@@ -1,0 +1,3 @@
+SELECT カラム名, カラム名
+FROM テーブル名
+WHERE カラム名 IS NULL
