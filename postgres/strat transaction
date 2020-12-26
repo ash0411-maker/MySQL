@@ -1,0 +1,5 @@
+START TRANSACTION;
+INSERT INTO テーブル名 VALUES ('データ', 'データ'..........);
+INSERT INTO テーブル名 VALUES ('データ', 'データ'..........);
+........
+COMMIT;
