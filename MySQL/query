@@ -117,3 +117,8 @@ mysql> select category, withdraw,
 SELECT category, withdraw 
 FROM expenses 
 WHERE withdraw = ( SELECT MAX(withdraw FROM expenses );
+
+
+## サブクエリ UPDATE
+select avg(withdraw) from archiveExpenses where withdraw > 0 and category = '食費';
+別のテーブルから抽出した内容でデータを更新する
