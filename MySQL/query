@@ -125,3 +125,17 @@ select avg(withdraw) from archiveExpenses where withdraw > 0 and category = '食
 
 ##  any
 select * from expenses where category = '食費' AND withdraw < (SELECT withdraw from archiveExpenses where category = '食費');
+
+
+
+## 表のサブクエリ
+mysql> select sum(SUB.withdraw) as 出金額合計 from
+    -> (select date, category, withdraw from expenses
+    -> union
+    -> select date, category, withdraw from archiveExpenses
+    -> where date >= 2013-01-01 AND date <= '2013-01-31') as SUB;
++-----------------+
+| 出金額合計        |
++-----------------+
+|          199230 |
++-----------------+
